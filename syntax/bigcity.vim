@@ -1,4 +1,5 @@
 " Quit when a syntax file was already loaded.
+" test
 if exists('b:current_syntax') | finish |  endif
 "
 "syn keyword bcKW fun 
@@ -6,7 +7,7 @@ syn match bcHeader "^.*---.*---$"
 syn match bcBullet "^\s-\s.*$" contains=bcBracket
 syn match bcBracket "<.*>"
 syn match bcBulletPriority "^\s--\s.*$" contains=bcBracket
-syn match bcComplete "^\s+\s.*$"
+syn match bcComplete "^.*+\s.*$"
 syn match bcSubPoint "^\s\s\s-\s.*$" 
 syn region bcBracket start="<" end=">" 
 syn match bcComment ".*#.*$"
